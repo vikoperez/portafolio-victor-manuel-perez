@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=STIX+Two+Math&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Otomanopee+One&family=STIX+Two+Math&display=swap');
+@font-face {
+    font-family: 'Otomanopee One', sans-serif;;
+    src: url();
+}
+.main-section {
+    height: 100vh;
+    background-image: url();
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-tittle{
+    text-align: center;
+    font-family: "otomanopee one", sans-serif;
+    color: #fff;
+    font-size: 1rem;
+    padding: 10px;
+    background-color: aquamarine;
+}
+
