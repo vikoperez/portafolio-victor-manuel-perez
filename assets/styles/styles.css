@@ -104,7 +104,34 @@ menu{
 }
 
 @media screen and (max-width: 700px){
-    header{
+    
+    /* header{
+        display: none;
+    } */
+
+    nav{
+        display: flex;
+        width: 100%;
+        height: 10%;
+        z-index: 1000000;
+        top: 0;
+        left: 0;
+        position: fixed;
+        border: none;
+    }
+    .main-ul{
+        display: flex;
+    }
+
+    .cabecera{
+        display: none;
+    }
+
+    .cabecera-1{
+        display: none;
+    }
+
+    .fotico{
         display: none;
     }
     
@@ -745,34 +772,6 @@ menu{
 
 /*<--------------------------------------------------->
 <--------------------------------------------------->
-<----------------contact---------------------------->
-<--------------------------------------------------->
-<---------------------------------------------------> */
-
-.contact{
-    background-color: #fff;
-    height: 100%;
-    margin-left: 18%;
-}
-
-.contact-titulo{
-    font-size: 40px;
-
-}
-
-.contacto{
-    margin: 55px 35px;
-}
-
-@media screen and (max-width: 700px){
-    .contact{
-        margin-left: 0%;
-    }
-    
-}
-
-/*<--------------------------------------------------->
-<--------------------------------------------------->
 <--------------- ESPACIO 2-------------------------->
 <--------------------------------------------------->
 <---------------------------------------------------> */
@@ -815,6 +814,9 @@ menu{
     background-color: #1976D2;
     border-radius: 20%;
     margin-left: 35%;
+    display: flex;
+        justify-content: center;
+        align-items: center;
 }
 
 .img-2{
@@ -822,6 +824,9 @@ menu{
     background-color: #5C6BC0;
     border-radius: 20%;
     margin-left: 35%;
+    display: flex;
+        justify-content: center;
+        align-items: center;
 }
 
 .img-3{
@@ -829,6 +834,9 @@ menu{
     background-color: rgb(233, 27, 240);
     border-radius: 20%;
     margin-left: 35%;
+    display: flex;
+        justify-content: center;
+        align-items: center;
 }
 
 .img-4{
@@ -836,6 +844,9 @@ menu{
     background-color: #ff0000;
     border-radius: 20%;
     margin-left: 35%;
+    display: flex;
+        justify-content: center;
+        align-items: center;
 
 }
 
@@ -844,6 +855,9 @@ menu{
     background-color: #40E0D0;
     border-radius: 20%;
     margin-left: 35%;
+    display: flex;
+        justify-content: center;
+        align-items: center;
 
 }
 
@@ -853,7 +867,7 @@ menu{
 }
 
 .un-borde-top div{
-    margin-left: 2%;
+    /* margin-left: 2%; */
     display: inline-flex;
 }
 
@@ -881,21 +895,37 @@ menu{
         display: flex;
         flex-direction: row;
     }
-    /* .img-1{
+    .img-1{
         margin-left: 1%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     .img-2{
         margin-left: 1%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     .img-3{
         margin-left: 1%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     .img-4{
         margin-left: 1%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     .img-5{
         margin-left: 1%;
-    } */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
 }
 
 
