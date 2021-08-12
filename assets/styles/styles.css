@@ -393,6 +393,14 @@ menu{
     .services{
         margin-left: 0%;
     }
+    .box-principal{
+        display: flex;
+        flex-direction: column;
+    }
+    .box{
+        width: 100%;
+        
+    }
     
 }
 
@@ -727,6 +735,11 @@ menu{
     .blog{
         margin-left: 0%;
     }
+
+    .main-blog{
+        display: flex;
+        flex-direction: column;
+    }
     
 }
 
@@ -861,14 +874,14 @@ menu{
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
+        justify-content: space-between;
     }
     
     .espacio-2-box{
         display: flex;
         flex-direction: row;
     }
-    .img-1{
+    /* .img-1{
         margin-left: 1%;
     }
     .img-2{
@@ -882,7 +895,7 @@ menu{
     }
     .img-5{
         margin-left: 1%;
-    }
+    } */
 }
 
 
