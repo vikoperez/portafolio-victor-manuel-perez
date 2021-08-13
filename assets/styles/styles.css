@@ -23,7 +23,7 @@ html{
 }
 
 li{
-    margin-top: 25px;
+    /* margin-top: 25px; */
     text-align: center;
     
 }
@@ -54,14 +54,13 @@ nav{
     justify-content:center;
     align-items: center;
     background-position: center;
-
+    z-index: 12934878;
     
 }
-.nav-div{
-    
+.nav-div{    
     background-position: center;
     justify-content: center;
-    align-items: center;
+    align-items:center;
 }
 .fotico{
     background-image: url("../img/backflip.jpg");
@@ -87,7 +86,11 @@ nav{
     margin-top: 10px;
 }
 
-menu{
+.main-ul li{
+    margin-top: 20%;
+}
+
+/* menu{
     display: block;
     list-style-type: disc;
     margin-block-start: 1em;
@@ -96,12 +99,44 @@ menu{
     margin-inline-end: 0px;
     padding-inline-start: 40px;
 
-}
+} */
 
 .main-ul{
     list-style: none;
     padding-left: 0;
 }
+
+@media screen and (max-width: 1030px){
+    nav{
+        display: flex;
+        width: 100%;
+        height: 10%;
+        z-index: 1000000;
+        top: 0;
+        left: 0;
+        position: fixed;
+        border: none;
+    }
+    .main-ul{
+        display: flex;
+    }
+
+    .cabecera{
+        display: none;
+    }
+
+    .cabecera-1{
+        display: none;
+    }
+
+    .fotico{
+        display: none;
+    }
+    .main-ul li{
+        margin-top: 0;
+    }
+}
+
 
 @media screen and (max-width: 700px){
     
@@ -134,6 +169,9 @@ menu{
     .fotico{
         display: none;
     }
+    .main-ul li{
+        margin-top: 0;
+    }
     
 }
 
@@ -156,6 +194,7 @@ menu{
 .home-titulo{
     color: white;
     font-size: 70px;
+    /* display: flex; */
 }
 
 .nombre{
@@ -164,12 +203,13 @@ menu{
 
 .texto-animado{
     display: flex;
-
-    height: 40px;
+    justify-content:flex-end;
+    height: 47px;
     width: 300px;
     color: white;
     font-size: 40px;
-    
+    overflow: hidden;
+
 }
 
 .texto{
@@ -186,11 +226,11 @@ menu{
     0%{margin-top: 0;}
     20%{margin-top: 0;}
 
-    25%{margin-top: -40px;}
-    50%{margin-top: -40px;}
+    25%{margin-top: -48px;}
+    50%{margin-top: -48px;}
     
-    55%{margin-top: -80px;}
-    80%{margin-top: -80px;}
+    55%{margin-top: -95px;}
+    80%{margin-top: -95px;}
 
     85%{margin-top: -40px;}
     95%{margin-top: 40px;}
@@ -198,10 +238,27 @@ menu{
     100%{margin-top: 0;}
 }
 
+@media screen and (max-width: 1030px) {
+    .home{
+        margin-left: 0%;
+    }
+    
+}
+
 @media screen and (max-width: 700px){
     .home{
         margin-left: 0%;
-        
+        background-image: none;
+        background-color: black;
+    }
+    .home-titulo{
+        color: white;
+        font-size: 60px;
+        display: flex;
+
+    }
+    .nombre{
+        margin-left: 10px;
     }
     
 }
@@ -317,7 +374,9 @@ menu{
     cursor: pointer ;
 }
 
-@media screen and (max-width: 700px){
+
+
+@media screen and (max-width: 1030px){
     
     .about{
         height: 100%;
@@ -415,6 +474,12 @@ menu{
     justify-content: center;
     list-style: none;   
 }
+@media screen and (max-width: 1030px) {
+    .services{
+        margin-left: 0%;
+    }
+    
+}
 
 @media screen and (max-width: 700px){
     .services{
@@ -487,7 +552,12 @@ menu{
     z-index: 999;
 }
 
-
+@media screen and (max-width: 1030px) {
+    .espacio{
+        margin-left: 0%;
+    }
+    
+}
 
 @media screen and (max-width: 700px){
     .espacio{
@@ -523,6 +593,7 @@ menu{
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        text-align: center;
     }
     .espacio-boton{
 
@@ -647,6 +718,13 @@ menu{
 
 }
 
+@media screen and (max-width: 1030px) {
+    .portfolio{
+        margin-left: 0%;
+    }
+    
+}
+
 @media screen and (max-width: 700px){
 
     .portfolio{
@@ -718,6 +796,13 @@ menu{
     position: relative;    
     width: 100px;
     border-radius: 50%;
+}
+
+@media screen and (max-width: 1030px) {
+    .clients{
+        margin-left: 0%;
+    }
+    
 }
 
 @media screen and (max-width: 700px){
@@ -801,6 +886,13 @@ menu{
     cursor: pointer;
 }
 
+@media screen and (max-width: 1030px) {
+    .blog{
+        margin-left: 0%;
+    }
+    
+}
+
 @media screen and (max-width: 700px){
     .blog{
         margin-left: 0%;
@@ -853,7 +945,7 @@ menu{
 }
 
 .img-1{
-    padding: 5%;
+    padding: 25%;
     background-color: #1976D2;
     border-radius: 20%;
     margin-left: 35%;
@@ -863,7 +955,7 @@ menu{
 }
 
 .img-2{
-    padding: 5%;
+    padding: 25%;
     background-color: #5C6BC0;
     border-radius: 20%;
     margin-left: 35%;
@@ -873,7 +965,7 @@ menu{
 }
 
 .img-3{
-    padding: 5%;
+    padding: 25%;
     background-color: rgb(233, 27, 240);
     border-radius: 20%;
     margin-left: 35%;
@@ -883,7 +975,7 @@ menu{
 }
 
 .img-4{
-    padding: 5%;
+    padding: 25%;
     background-color: #ff0000;
     border-radius: 20%;
     margin-left: 35%;
@@ -894,7 +986,7 @@ menu{
 }
 
 .img-5{
-    padding: 5%;
+    padding: 25%;
     background-color: #40E0D0;
     border-radius: 20%;
     margin-left: 35%;
@@ -918,6 +1010,13 @@ menu{
     color: #ff0000;
 }
 
+@media screen and (max-width: 1030px) {
+    .espacio-2{
+        margin-left: 0%;
+    }
+    
+}
+
 @media screen and (max-width: 700px){
     .espacio-2{
         margin-left: 0%;
@@ -931,22 +1030,26 @@ menu{
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: space-between;
+        justify-content: space-around;
+        text-align: center;
     }
     
     
+    
     .espacio-2-box{
-        width: 70%;
+        width: 90%;
         height: 50%;
         display: flex;
         flex-direction: row;
         overflow: hidden;
+        justify-content: space-between;
     }
     .un-borde-top p{
         margin-top: 0%;
         height: 70%;
     }
     .img-1{
+        padding: 5%;
         margin-left: 1%;
         display: flex;
         justify-content: center;
@@ -957,24 +1060,31 @@ menu{
         display: flex;
         justify-content: center;
         align-items: center;
+        padding: 5%;
+
     }
     .img-3{
         margin-left: 1%;
         display: flex;
         justify-content: center;
         align-items: center;
+        padding: 5%;
+
     }
     .img-4{
         margin-left: 1%;
         display: flex;
         justify-content: center;
         align-items: center;
+        padding: 5%;
+
     }
     .img-5{
         margin-left: 1%;
         display: flex;
         justify-content: center;
         align-items: center;
+        padding: 5%;
         
     }
 }
