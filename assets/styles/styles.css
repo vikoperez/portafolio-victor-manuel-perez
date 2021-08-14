@@ -90,15 +90,23 @@ nav{
     margin-top: 20%;
 }
 
-/* menu{
-    display: block;
-    list-style-type: disc;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    padding-inline-start: 40px;
+/* .menu-button{
+    width: 20vw;
+    height: 7vh;
+    background-color: orange;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0px 0px 3px 0px white;
+} */
 
+/* .menu{
+    width: 40vw;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: lightgrey;
 } */
 
 .main-ul{
@@ -156,7 +164,9 @@ nav{
     }
     .main-ul{
         display: flex;
+        flex-direction: column;
     }
+    
 
     .cabecera{
         display: none;
@@ -173,6 +183,139 @@ nav{
         margin-top: 0;
     }
     
+}
+/*<--------------------------------------------------->
+<--------------------------------------------------->
+<-------------------buton--------------------------->
+<--------------------------------------------------->
+<---------------------------------------------------> */
+
+/* .boton-fixed{
+    position: fixed;
+    top: 50%;
+    right: 0%;
+    display: flex;
+} */
+
+.boton-tuerca{
+    position: absolute;
+    top: 0;
+    left: -46px;
+    width: 7vh;
+    height: 7vh;
+    background-color: red;
+    z-index: 312312;
+}
+
+.cuadro-colores{
+    position: fixed;
+    top: 35%;
+    right: -37vh;
+    display: flex;
+    width: 37vh;
+    height: 45vh;
+    background-color: white;
+    transition: right 0.5s ease;
+    z-index: 12345678909876543212345678987654;
+    
+}
+.colores-contenedor{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+   
+}
+.colores-contenedor div{
+    border-radius: 50%;
+    height: 2.3vw;
+    width: 2.3vw;
+    border: 1px solid black;
+    cursor: pointer;
+    margin-left: .5vw;
+    margin-right: .5vw ;
+}
+
+
+.cuadro-colores.salio{
+   right: 0vh;
+}
+
+.colores-1{
+    background-color: red ;
+}
+.colores-2{
+    background-color: blue ;
+}    
+.colores-3{
+    background-color: green ;
+}
+.colores-4{
+    background-color: #CF0000 ;
+}
+.colores-5{
+    background-color: #FF2626 ;
+}
+.colores-6{
+    background-color: #FFB740 ;
+}
+.colores-7{
+    background-color: #FAFF00 ;
+}
+.colores-8{
+    background-color: #52006A ;
+}
+.colores-9{
+    background-color: #064420 ;
+}
+.colores-10{
+    background-color: #F7A440 ;
+}
+.colores-11{
+    background-color: #F98404 ;
+}
+.colores-12{
+    background-color: #4F0E0E ;
+}
+.colores-13{
+    background-color: #FF3F00 ;
+}
+.colores-14{
+    background-color: #FFF338 ;
+}
+.colores-15{
+    background-color: #FF4C29 ;
+}
+.colores-16{
+    background-color: #2D2424 ;
+}
+.colores-17{
+    background-color: #DA0037 ;
+}
+.colores-18{
+    background-color: #F54748 ;
+}
+.colores-19{
+    background-color: #04009A ;
+}
+.colores-20{
+    background-color: #39A2DB ;
+}
+
+@media screen and (max-width: 700px){
+    .cuadro-colores{
+        height: 50vh;
+
+    }
+    .colores-contenedor div{
+        border-radius: 50%;
+        height: 9vw;
+        width: 9vw;
+        border: 1px solid black;
+        cursor: pointer;
+        margin-left: 1vw;
+        margin-right: 1vw ;
+    }
 }
 
 /*<--------------------------------------------------->
@@ -282,6 +425,7 @@ nav{
 
 .about-titulo{
     font-size: 40px;
+    color: red;
 
 }
 
@@ -452,6 +596,7 @@ nav{
 .servicios{
     margin: 55px 35px;
     
+    
 }
 
 .box-principal{
@@ -461,6 +606,7 @@ nav{
 
 .services-titulo{
     font-size: 40px;
+    color: red;
 }
 
 .box{
@@ -473,6 +619,9 @@ nav{
     align-items: center;
     justify-content: center;
     list-style: none;   
+}
+.box li h3{
+    color: red;
 }
 @media screen and (max-width: 1030px) {
     .services{
@@ -626,6 +775,7 @@ nav{
 .portfolio-titulo{
     font-size: 40px;
     margin-bottom: 15px;
+    color: red;
 }
 
 .portafolio{
@@ -763,6 +913,7 @@ nav{
 
 .clients-titulo{
     font-size: 40px;
+    color: red;
 }
 
 .clientes{
@@ -789,6 +940,10 @@ nav{
 
 .main-clientes div li p{
     margin: 0 15%;
+}
+
+.main-clientes div li h3{
+    color: red;
 }
 
 .imagen-clientes{
@@ -836,6 +991,7 @@ nav{
 
 .blog-titulo{
     font-size: 40px;
+    color: red;
 }
 
 .me-blog{
@@ -875,6 +1031,7 @@ nav{
     font-weight: bolder;
     margin-top: 3%;
     margin-bottom: 3%;
+    color: red;
 }
 
 .main-blog div p{

@@ -26,6 +26,7 @@
                     </div>
                     <h3 class="cabecera-1">Victor Perez</h3>
                     <p class="cabecera">Listo para trabajar </p>
+                    <button type="button" class="menu-button">Menú</button>
                     <div class="menu">                
                         <ul class="main-ul">
                             <li>
@@ -53,12 +54,42 @@
             </nav>
         </header>
         <!---------------->
+        <!----- boton ---->
+        <!---------------->      
+        <div id="cuadro-colores" class="cuadro-colores" data-x='orange' onClick="changeColor(this)">
+            <button id="boton" class="boton-tuerca changeColor" onclick="saleCuadro()">
+
+            </button>
+            <div class="colores-contenedor">
+                <div class="colores-1" data-color="red" onClick="changeColor(this)"></div>
+                <div class="colores-2" data-color="blue" onClick="changeColor(this)"></div>
+                <div class="colores-3" data-color="green" onClick="changeColor(this)"></div>
+                <div class="colores-4" data-color="#CF0000" onClick="changeColor(this)"></div>
+                <div class="colores-5" data-color="#FF2626" onClick="changeColor(this)"></div>
+                <div class="colores-6" data-color="#FFB740" onClick="changeColor(this)"></div>
+                <div class="colores-7" data-color="#FAFF00" onClick="changeColor(this)"></div>
+                <div class="colores-8" data-color="#52006A" onClick="changeColor(this)"></div>
+                <div class="colores-9" data-color="#064420" onClick="changeColor(this)"></div>
+                <div class="colores-10" data-color="#F7A440" onClick="changeColor(this)"></div>
+                <div class="colores-11" data-color="#F98404" onClick="changeColor(this)"></div>
+                <div class="colores-12" data-color="#4F0E0E" onClick="changeColor(this)"></div>
+                <div class="colores-13" data-color="#FF3F00" onClick="changeColor(this)"></div>
+                <div class="colores-14" data-color="#FFF338" onClick="changeColor(this)"></div>
+                <div class="colores-15" data-color="#FF4C29" onClick="changeColor(this)"></div>
+                <div class="colores-16" data-color="#2D2424" onClick="changeColor(this)"></div>
+                <div class="colores-17" data-color="#DA0037" onClick="changeColor(this)"></div>
+                <div class="colores-18" data-color="#F54748" onClick="changeColor(this)"></div>
+                <div class="colores-19" data-color="#04009A" onClick="changeColor(this)"></div>
+                <div class="colores-20" data-color="#39A2DB" onClick="changeColor(this)"></div>
+            </div>
+        </div>
+        <!---------------->
         <!----- HOME ----->
         <!---------------->
         <section class="home" id="home-1"> 
             <div class="casa">
              
-                <h2 class="home-titulo" >Victor <span class="nombre"> Perez </span></h2>
+                <h2 class="home-titulo" >Victor <span class="nombre changeColor" > Perez </span></h2>
                 <div class="texto-animado">
                     <p class="animado">I'm a <span> <ul class="texto">         
                         <li>Developer</li>
@@ -74,26 +105,26 @@
         <!---------------->  
         <section class="about" id="about-1">
             <div class="sobre-mi">
-                <h2 class="about-titulo"> Sobre mi </h2>
+                <h2 class="about-titulo changeColor"> Sobre mi </h2>
                 <p class="subtitulo-about">Conoce sobre mi</p>
                 <div class="contenedor-about">
                     <div class="about-foto">                       
                     </div>
                     <div>
                         <div class="about-texto">
-                            <h4 class="rojo">Who am i? </h4>
+                            <h4 class="rojo changeColor">Who am i? </h4>
                             <h2 class="quien-soy">I'm Victor Perez, a visual UX/UI Designer and Web Developer</h2>
                             <p class="mucho-texto">I am a freelancer based in the United Kingdom and i have been building noteworthy UX/UI designs and websites for years, which comply with the latest design trends. I help convert a vision and an idea into meaningful and useful products. Having a sharp eye for product evolution helps me prioritize tasks, iterate fast and deliver faster.                        </p>
                         </div>
                         <div class="about-informacion">
                             <div class="my-info">
-                                <p> <span class="span-info"> Name:</span> victor Perez</p>
-                                <p> <span class="span-info">Email:</span> k-kratoss@hotmail.com</p>
-                                <p> <span class="span-info">Age:</span>20</p>
-                                <p> <span class="span-info">From:</span> Medellin, Colombia</p>                            
+                                <p> <span class="span-info changeColor"> Name:</span> victor Perez</p>
+                                <p> <span class="span-info changeColor">Email:</span> k-kratoss@hotmail.com</p>
+                                <p> <span class="span-info changeColor">Age:</span>20</p>
+                                <p> <span class="span-info changeColor">From:</span> Medellin, Colombia</p>                            
                             </div>
                             <div class="info-botones">            
-                                <button class="info-boton-izquierdo">Download cv</button>
+                                <button class="info-boton-izquierdo changeColor">Download cv</button>
                                 <button class="info-boton-derecho">My work</button>
                             </div>
                         </div>
@@ -106,28 +137,28 @@
         <!---------------->
         <section class="services" id="services-1">
             <div class="servicios">
-                <h2 class="services-titulo"> Servicios </h2>
+                <h2 class="services-titulo changeColor"> Servicios </h2>
                 <p>Servicios que le ofrezco a los clientes</p>
-                <div class="box-principal">
+                <div class="box-principal ">
                     <div class="box">
                         <li class="listas">
-                            <img src="assets/img/trending.png" alt="xD">
-                            <h3 >Design Trends </h3>
+                            <img src="assets/img/trending (1).png" alt="xD">
+                            <h3 class="changeColor">Design Trends </h3>
                             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
                         </li>
                     </div>
                     <div class="box">
                         <li class="listas">
-                            <img src="assets/img/imagen (1).png" alt="xD">
-                            <h3> PSD Design </h3>
+                            <img src="assets/img/imagenes.png" alt="xD">
+                            <h3 class="changeColor"> PSD Design </h3>
                             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
                         </li>
                     </div>
                     
                     <div class="box">
                         <li class="listas">
-                            <img src="assets/img/headphones (1).png" alt="xD">
-                            <h3> Customer Support </h3>
+                            <img src="assets/img/headphones.png" alt="xD">
+                            <h3 class="changeColor"> Customer Support </h3>
                             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
                         </li>
                     </div>
@@ -136,22 +167,22 @@
                 <div class="box-principal">
                     <div class="box"> 
                         <li class="listas">
-                            <img src="assets/img/web-maintenance (1).png" alt="xD">
-                            <h3> Web Development</h3>
+                            <img src="assets/img/web-maintenance.png" alt="xD">
+                            <h3 class="changeColor"> Web Development</h3>
                             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
                             </li>
                     </div>
                     <div class="box">
                         <li class="listas">
-                            <img src="assets/img/responsive (1).png" alt="xD">
-                            <h3> Fully Responsive </h3>
+                            <img src="assets/img/responsive.png" alt="xD">
+                            <h3 class="changeColor"> Fully Responsive </h3>
                             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
                             </li>
                     </div>
                     <div class="box">
                         <li class="listas">
-                            <img src="assets/img/creative (1).png" alt="xD">
-                            <h3> Branding </h3>
+                            <img src="assets/img/creative.png" alt="xD">
+                            <h3 class="changeColor"> Branding </h3>
                             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
                         </li>                   
                     </div>
@@ -166,14 +197,14 @@
                 <h2 class="titulo-espacio">Let's work together!</h2>
                 <p class="texto-espacio">I am available for freelance projects. Hire me and get your project done.</p>
             </div>
-            <button class="espacio-boton"> hire me</button>
+            <button class="espacio-boton changeColor"> hire me</button>
         </section>
         <!---------------->
         <!-- PORTAFOLIO -->
         <!---------------->
         <section class="portfolio" id="portfolio-1">
             <div class="portafolio">
-                <h2 class="portfolio-titulo"> Portafolio </h2>
+                <h2 class="portfolio-titulo changeColor"> Portafolio </h2>
                 <p class="portafolio-texto">Showcasing some of my best work</p>
                     <ul class="main-grid">
                         <li class="portafolio-lista">All</li>
@@ -186,42 +217,42 @@
                         <img src="assets/img/moto.jpg" alt="xD"> 
                         <div class="portafolio-box-1">
                             <h3>Slee dw</h3>
-                            <p>More info</p>
+                            <p class="changeColor">More info</p>
                         </div>
                     </figure>
                     <figure>
                         <img src="assets/img/carretera.jpg" alt="xD"> 
                         <div class="portafolio-box-1">
                             <h3>Slee dw</h3>
-                            <p>More info</p>
+                            <p class="changeColor">More info</p>
                         </div>
                     </figure>
                     <figure>
                         <img src="assets/img/magicyolo.jpg" alt="xD"> 
                         <div class="portafolio-box-1">
                             <h3>Slee dw</h3>
-                            <p>More info</p>
+                            <p class="changeColor">More info</p>
                         </div>
                     </figure>
                     <figure>
                         <img src="assets/img/magicyolo.jpg" alt="xD"> 
                         <div class="portafolio-box-1">
                             <h3>Slee dw</h3>
-                            <p>More info</p>
+                            <p class="changeColor">More info</p>
                         </div>
                     </figure>
                     <figure>
                         <img src="assets/img/magicyolo.jpg" alt="xD"> 
                         <div class="portafolio-box-1">
                             <h3>Slee dw</h3>
-                            <p>More info</p>
+                            <p class="changeColor">More info</p>
                         </div>
                     </figure>
                     <figure>
                         <img src="assets/img/coffe.jpg" alt="xD"> 
                         <div class="portafolio-box-1">
                             <h3>Slee dw</h3>
-                            <p>More info</p>
+                            <p class="changeColor">More info</p>
                         </div>
                     </figure>               
                 </div>
@@ -232,7 +263,7 @@
         <!--- CLIENTES --->
         <section class="clients" id="clients-1">
             <div class="clientes">
-                <h2 class="clients-titulo"> References </h2>
+                <h2 class="clients-titulo changeColor"> References </h2>
                 <p>Lo que mis referencias piensan de mi</p>
             </div>
             <figure class="main-clientes">
@@ -241,7 +272,7 @@
                         <img src="assets/img/comillas (1).png" alt="xD">
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa cumque qui aspernatur quos. </p>
                         <img class="imagen-clientes" src="assets/img/sofi-th.jpg" alt="xD">
-                        <h3>Sofia Garro</h3>
+                        <h3 class="changeColor">Sofia Garro</h3>
                     </li>
                 </div>
                 <div>
@@ -249,7 +280,7 @@
                         <img src="assets/img/comillas (1).png" alt="xD">
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea doloremque nostrum et iste. </p>
                         <img class="imagen-clientes" src="assets/img/zulu.jpg" alt="xD">
-                        <h3>Sebastian Zuluaga</h3>
+                        <h3 class="changeColor">Sebastian Zuluaga</h3>
                     </li>
                 </div>
                 <div>
@@ -257,7 +288,7 @@
                         <img src="assets/img/comillas (1).png" alt="xD">
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic ab saepe esse corrupti. </p>
                         <img class="imagen-clientes" src="assets/img/panda.jpg" alt="xD">
-                        <h3>Daniel Castaño</h3>
+                        <h3 class="changeColor">Daniel Castaño</h3>
                     </li>
                 </div>
             </figure>
@@ -267,7 +298,7 @@
         <!---------------->
         <section class="blog" id="blog-1">
             <div class="me-blog">
-                <h2 class="blog-titulo"> Blog </h2>
+                <h2 class="blog-titulo changeColor"> Blog </h2>
                 <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam nam debitis provident assumenda!</p>
             </div>
             <figure class="main-blog">
@@ -276,27 +307,27 @@
                         <img src="assets/img/coffe.jpg" alt="xD">
                         <!-- <span>10/08/21</span> -->
                     </a>
-                    <p class="titulo">Top tools for Photographers</p>
+                    <p class="titulo changeColor">Top tools for Photographers</p>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia explicabo expedita error praesentium.</p>
-                    <p>Tags: <span class= "span-blog" >Photography</span> / <span class= "span-blog">Freelance</span></p>
+                    <p>Tags: <span class= "span-blog changeColor" >Photography</span> / <span class= "span-blog changeColor">Freelance</span></p>
                 </div>
                 <div>                    
                     <a>                   
                         <img src="assets/img/coffe.jpg" alt="xD">
                         <!-- <span>10/08/21</span> -->
                     </a>                    
-                    <p class="titulo">Take a tour of my office</p> 
+                    <p class="titulo changeColor">Take a tour of my office</p> 
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus officia totam earum sequi!</p>                    
-                    <p>Tags: <span class= "span-blog" >Photography</span> / <span class= "span-blog">Freelance</span></p>
+                    <p>Tags: <span class= "span-blog changeColor" >Photography</span> / <span class= "span-blog changeColor">Freelance</span></p>
                 </div>
                 <div>                   
                     <a>                   
                         <img src="assets/img/coffe.jpg" alt="xD">
                         <!-- <span>10/08/21</span> -->
                     </a>                    
-                    <p class="titulo">How i became a Web Designer</p>
+                    <p class="titulo changeColor">How i became a Web Designer</p>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores itaque delectus libero officiis!</p>                    
-                    <p>Tags: <span class= "span-blog" >Photography</span> / <span class= "span-blog">Freelance</span></p>
+                    <p>Tags: <span class= "span-blog changeColor" >Photography</span> / <span class= "span-blog changeColor">Freelance</span></p>
                 </div>
             </figure>
         </section>
@@ -333,7 +364,7 @@
                     <a class="img-5" href="#0"><img src="assets/img/gorjeo.png" alt="xD"></a>
                 </div>
                 <div class="espacio-centrado">
-                <p>Copyright © 2019 CardX, all rights reserved. Developed by <a class="span-espacio-2" href="https://themeforest.net/user/exill"> Exill.</a> </p>
+                <p>Copyright © 2019 CardX, all rights reserved. Developed by <a class="span-espacio-2 changeColor" href="https://themeforest.net/user/exill"> Exill.</a> </p>
                 </div>
             </div>
         </section>

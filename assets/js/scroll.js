@@ -1,10 +1,23 @@
-const header = document.getElementById("main-header");
+let cuadroColores = document.getElementById ("cuadro-colores");
 
-function scrollHeaderTop (){
-    if (window.scrollY > 500){
-        header.classList.add("top-header")
+function saleCuadro (){
+    if(cuadroColores.classList.contains('salio')){
+        cuadroColores.classList.remove('salio');
+    }else{
+        cuadroColores.classList.add('salio');
     }
 }
 
-document.addEventListener("scroll", scrollHeaderTop);
-// document.onscroll=scrollHeaderTop
+function changeColor(obj){
+    let arrayOfChangecolorelements = document.getElementsByClassName('changeColor');
+    for(let i = 0; i < arrayOfChangecolorelements.length; i++){
+        if(arrayOfChangecolorelements[i].tagName !== 'DIV' 
+        && arrayOfChangecolorelements[i].tagName !== 'BUTTON' ){
+        
+            arrayOfChangecolorelements[i].style.color =  obj.dataset.color;
+        } else {
+            arrayOfChangecolorelements[i].style.backgroundColor =  obj.dataset.color;
+        }
+    }
+}
+
