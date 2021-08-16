@@ -44,23 +44,20 @@ a{
 <--------------------------------------------------->
 <---------------------------------------------------> */
 
-nav{
+
+    
+
+.nav-div{    
+    background-position: center;
+    justify-content:center;
+    align-items:center;
     height: 100%;
     background-color: rgb(2, 2, 2);
     color: white;
-    display: flex;
+    display:flex;
+    flex-wrap: wrap;
     position: fixed;
-    width: 18%;
-    justify-content:center;
-    align-items: center;
-    background-position: center;
-    z-index: 12934878;
-    
-}
-.nav-div{    
-    background-position: center;
-    justify-content: center;
-    align-items:center;
+    width: 16%;
 }
 .fotico{
     background-image: url("../img/backflip.jpg");
@@ -69,8 +66,8 @@ nav{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100px;
-    width: 100px;
+    height: 160px;
+    width: 160px;
     border-radius: 50%;
     margin: 30px 10px;
     border: blanchedalmond solid;
@@ -90,24 +87,18 @@ nav{
     margin-top: 20%;
 }
 
-/* .menu-button{
-    width: 20vw;
-    height: 7vh;
-    background-color: orange;
-    border-radius: 10px;
-    border: none;
-    box-shadow: 0px 0px 3px 0px white;
-} */
+.menu-button{
+    display: none;
+}
 
-/* .menu{
+.menu{
     width: 40vw;
-    height: 70vh;
+    height: 40vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: lightgrey;
-} */
+}
 
 .main-ul{
     list-style: none;
@@ -115,20 +106,29 @@ nav{
 }
 
 @media screen and (max-width: 1030px){
-    nav{
+    .nav-div{
         display: flex;
-        width: 100%;
+        background-position: center;
+        justify-content: start;
+        align-items:center;
         height: 10%;
-        z-index: 1000000;
-        top: 0;
-        left: 0;
+        background-color: rgb(48, 47, 47);
+        color: white;
         position: fixed;
-        border: none;
-    }
-    .main-ul{
-        display: flex;
+        width: 100%;
+        z-index: 12934878;
+        transition: right 2s ease;
+
+    
     }
 
+    .main-ul{
+        display: flex;
+        flex-direction: column;
+        line-height: 30px;
+        align-items: flex-start;
+    }
+    
     .cabecera{
         display: none;
     }
@@ -143,6 +143,36 @@ nav{
     .main-ul li{
         margin-top: 0;
     }
+    .menu-button{
+        display: flex;
+        padding: 1%;
+        color: white;
+        background-color: gray;
+        border-radius: 10%;
+        position: absolute;
+        margin-top: 0% ;
+        left: 5%;
+        z-index: 133333333333333333333333323;
+        
+    }
+
+    .menu{
+        width: 20vw;
+        height: 35vh;
+        display: none;
+        /* justify-content: start; */
+        align-items:flex-start;
+        background-color: rgb(48, 47, 47);
+        position: fixed;
+        top: -25%;
+        left: 5%;        
+    }
+
+    .menu.abrio{
+        display: flex;
+        top: 7%;
+    }
+   
 }
 
 
@@ -152,7 +182,7 @@ nav{
         display: none;
     } */
 
-    nav{
+    /* nav{
         display: flex;
         width: 100%;
         height: 10%;
@@ -161,13 +191,34 @@ nav{
         left: 0;
         position: fixed;
         border: none;
+        justify-content: flex-start;
+        padding-left: 9%;
+
+    } */
+
+    .nav-div{
+        display: flex;
+        background-position: center;
+        justify-content: start;
+        align-items:center;
+        height: 10%;
+        background-color: rgb(48, 47, 47);
+        color: white;
+        position: fixed;
+        width: 100%;
+        z-index: 12934878;
+        transition: right 0.5s ease;
+
+    
     }
+
     .main-ul{
         display: flex;
         flex-direction: column;
+        line-height: 30px;
+        align-items: flex-start;
     }
     
-
     .cabecera{
         display: none;
     }
@@ -182,6 +233,35 @@ nav{
     .main-ul li{
         margin-top: 0;
     }
+    .menu-button{
+        display: flex;
+        padding: 3%;
+        color: white;
+        background-color: gray;
+        border-radius: 10%;
+        position: absolute;
+        margin-top: 0% ;
+        left: 5%;
+        z-index: 133333333333333333333333323;
+    }
+
+    .menu{
+        width: 35vw;
+        height: 35vh;
+        display: none;
+        /* justify-content: start; */
+        align-items:flex-start;
+        background-color: rgb(48, 47, 47);
+        position: fixed;
+        top: -25%;
+        left: 5%;        
+    }
+
+    .menu.abrio{
+        display: flex;
+        top: 7%;
+    }
+
     
 }
 /*<--------------------------------------------------->
@@ -219,6 +299,10 @@ nav{
     z-index: 12345678909876543212345678987654;
     
 }
+.cuadro-colores.salio{
+    right: 0vh;
+ }
+
 .colores-contenedor{
     display: flex;
     align-items: center;
@@ -237,9 +321,7 @@ nav{
 }
 
 
-.cuadro-colores.salio{
-   right: 0vh;
-}
+
 
 .colores-1{
     background-color: red ;
@@ -328,7 +410,7 @@ nav{
     height: 100vh;
     background-image: url("../img/backflip.jpg");
     background-size: cover;
-    margin-left: 18%;
+    margin-left: 16%;
     display: flex;
     justify-content: center;
     align-items: center;  
@@ -415,7 +497,7 @@ nav{
 .about{
     background-color: #fff;
     height: 100%;
-    margin-left: 18%;
+    margin-left: 16%;
 }
 
 .sobre-mi{
@@ -590,7 +672,7 @@ nav{
 .services{
     background-color: #fff;
     height: 100%;
-    margin-left: 18%;
+    margin-left: 16%;
 }
 
 .servicios{
@@ -657,7 +739,7 @@ nav{
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
-    margin-left: 18%;
+    margin-left: 16%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -769,7 +851,7 @@ nav{
 .portfolio{
     background-color: #fff;
     height: 140%;
-    margin-left: 18%;
+    margin-left: 16%;
 }
 
 .portfolio-titulo{
@@ -908,7 +990,7 @@ nav{
 .clients{
     background-color: #fff;
     height: 100%;
-    margin-left: 18%;
+    margin-left: 16%;
 }
 
 .clients-titulo{
@@ -986,7 +1068,7 @@ nav{
 .blog{
     background-color: #fff;
     height: 100%;
-    margin-left: 18%;
+    margin-left: 16%;
 }
 
 .blog-titulo{
@@ -1071,7 +1153,7 @@ nav{
 .espacio-2{
     height: 60%; 
     background-color:rgb(0, 0, 0);
-    margin-left: 18%;
+    margin-left: 16%;
     border: 0.5px solid rgb(87, 85, 85);
 }
 
