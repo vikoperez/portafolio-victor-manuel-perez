@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=STIX+Two+Math&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Otomanopee+One&family=STIX+Two+Math&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 @font-face {
-    font-family: 'Otomanopee One', sans-serif;;
-    src: url();
+    font-family: 'Otomanopee One', sans-serif, 'Open Sans';;
+    font-family: 'Open Sans';
+    src: url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 }
 
 /*<--------------------------------------------------->
@@ -15,8 +17,7 @@
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
-    
-}
+    font-family: 'Open Sans', sans-serif;}
 
 html{
     scroll-behavior: smooth;
@@ -127,6 +128,8 @@ a{
         flex-direction: column;
         line-height: 30px;
         align-items: flex-start;
+        transition: right 1.5s ease;   
+
     }
     
     .cabecera{
@@ -153,7 +156,8 @@ a{
         margin-top: 0% ;
         left: 5%;
         z-index: 133333333333333333333333323;
-        
+        transition: right 1.5s ease;   
+
     }
 
     .menu{
@@ -165,12 +169,16 @@ a{
         background-color: rgb(48, 47, 47);
         position: fixed;
         top: -25%;
-        left: 5%;        
+        left: 5%;
+        transition: right 1.5s ease;   
+        
     }
 
     .menu.abrio{
         display: flex;
         top: 7%;
+        transition: right 1.5s ease;   
+
     }
    
 }
@@ -207,9 +215,7 @@ a{
         position: fixed;
         width: 100%;
         z-index: 12934878;
-        transition: right 0.5s ease;
-
-    
+        transition: right 1.5s ease;   
     }
 
     .main-ul{
@@ -217,6 +223,8 @@ a{
         flex-direction: column;
         line-height: 30px;
         align-items: flex-start;
+        transition: right 1.5s ease;   
+
     }
     
     .cabecera{
@@ -232,6 +240,8 @@ a{
     }
     .main-ul li{
         margin-top: 0;
+        transition: right 1.5s ease;   
+
     }
     .menu-button{
         display: flex;
@@ -243,6 +253,8 @@ a{
         margin-top: 0% ;
         left: 5%;
         z-index: 133333333333333333333333323;
+        transition: right 1.5s ease;   
+
     }
 
     .menu{
@@ -254,12 +266,16 @@ a{
         background-color: rgb(48, 47, 47);
         position: fixed;
         top: -25%;
-        left: 5%;        
+        left: 5%;
+        transition: right 1.5s ease;   
+        
     }
 
     .menu.abrio{
         display: flex;
         top: 7%;
+        transition: right 1.5s ease;   
+
     }
 
     
@@ -519,7 +535,7 @@ a{
 .about-foto{
     height: 80vh;
     width: 70vh; 
-    background-image: url("../img/perfil.jpg");
+    background-image: url("../img/victorAbout.jpg");
     background-position: center;
     background-size: cover;
     display: flex;
